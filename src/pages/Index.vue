@@ -60,8 +60,8 @@
 
 
           
-            <v-container v-if="list.length != 0">
               <v-card
+                v-if="list.length != 0"
                 v-for="(post,key) in list" :key="post.node.id"
                 width="350"
                 class="mt-5"
@@ -130,7 +130,6 @@
                   </v-expand-transition>
 
               </v-card>
-            </v-container>
 
         </v-row>
       </v-col>
