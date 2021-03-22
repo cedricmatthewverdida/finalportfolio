@@ -70,10 +70,10 @@
 
                 <v-expand-x-transition>
                     <v-img
-                      :lazy-src="`https://cedricverdida.herokuapp.com${post.node.images}`"
-                      :src="`https://cedricverdida.herokuapp.com${post.node.images}`"
+                      :lazy-src="post.node.images"
+                      :src="post.node.images"
                       height="200px"
-                      :alt="`https://cedricverdida.herokuapp.com${post.node.images}`"
+                      :alt="post.node.images"
                     />
                 </v-expand-x-transition>
 
