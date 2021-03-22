@@ -22,7 +22,7 @@ module.exports = function (api) {
   })
 
   api.loadSource(async actions => {
-    const { data } = await axios.get('https://cedricverdida.herokuapp.com/posts/')
+    const { data } = await axios.get('https://verdida.herokuapp.com/posts/')
 
     const collection = actions.addCollection({
       typeName: 'Post'
