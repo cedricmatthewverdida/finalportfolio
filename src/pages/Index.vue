@@ -70,10 +70,10 @@
 
                 <v-expand-x-transition>
                     <v-img
-                      :lazy-src="`post.node.images`"
-                      :src="`post.node.images`"
+                      :lazy-src="`${post.node.images}`"
+                      :src="`${post.node.images}`"
                       height="200px"
-                      :alt="`post.node.images`"
+                      :alt="`${post.node.images}`"
                     />
                 </v-expand-x-transition>
 
