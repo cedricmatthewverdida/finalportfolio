@@ -78,7 +78,7 @@
                 </v-expand-x-transition>
 
                 <v-card-title class="overline">
-                  {{post.node.title}}
+                  {{post.node.title | limitTitle}}
                 </v-card-title>
 
                 <v-card-subtitle class="caption">
@@ -258,6 +258,13 @@ export default {
   filters:{
       limitString : function (str){
         var length = 150;
+        var trimmedString = str.substring(0, length);
+
+        return trimmedString + '...';
+
+      },
+      limitTitle : function (str){
+        var length = 20;
         var trimmedString = str.substring(0, length);
 
         return trimmedString + '...';
