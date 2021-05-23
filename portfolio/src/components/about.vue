@@ -27,9 +27,9 @@
                             <small class="Hello outline"></small>
                         </div>
                        
-                       <p class="caption">I'm Cedric, Student and independent Full Stack Developer in Philippines. I do collaborate with my acquaintances so i could lend them some help.
+                       <p class="caption">Hello there! 👋 I'm Cedric, Student and independent Full Stack Developer 👨‍💻 in Philippines. I do collaborate with my acquaintances so i could lend them some help.
 
-                        I love building: Websites either a big or a small projects.
+                        I love building: Websites either a big or a small projects. 🧑‍🔧 👨‍🔧
                         
                         Driven self-starter and fast learner, seeking career change and Secure a responsible career opportunity to fully utilize my training and skills, while making significant contribution to the success of the company.
                         </p>
@@ -56,6 +56,10 @@
             </v-col>
 
             <v-col data-aos="fade-in">
+                <h1>
+                    Education,
+                    Achievements
+                </h1>
                   <v-timeline>
                         <v-timeline-item
                         v-for="(exp, i) in experience"
@@ -76,8 +80,8 @@
                                 {{exp.title}}
                             </v-card-title>
                             <v-card-text>
-                                <p class="caption">
-                                   {{exp.desc}}
+                                <p class="caption" v-html="exp.desc">
+                                   
                                 </p>
                                 </v-card-text>
                         </v-card>
@@ -107,20 +111,32 @@ import Typed from 'typed.js';
         {
           color: 'cyan',
           author: 'Cedric',
-          title: 'Why I Love Programming',
-          desc: "Programming has many faces. It is the science of structured thinking. It is the art of eloquent expression. It teaches you to be humble when you look at other peoples' fascinating work. Most of all, it teaches you a lot about yourself."
+          title: '👨‍💻UNDERGRADUATE',
+          desc: "🏫Cagayan de Oro College (COC) <br> 💼Bachelor of Information Technology <br> 🎓2020 - 2023"
         },
         {
           color: 'green',
           author: 'Cedric',
-          title: 'When I build stuffs!',
-          desc: 'First I draw then I think then I rest then I go to toilet! then think again then overthink again then I execute those ideas! lol :D'
+          title: '👨‍🎓SENIOR HIGH',
+          desc: '🏫Systems Technology Institute (STI) <br> 💼Technical Vocational Livelihood <br> 🎓2017-2019'
         },
         {
           color: 'pink',
           author: 'Cedric',
-          title: 'I am creativee!!',
-          desc: 'Yes I am verrryyy creativeee dude forsuree! HA HA HA'
+          title: '👨‍🎤HIGHSCHOOL',
+          desc: '🏫CAGAYAN DE ORO CITY NATIONAL HIGHSCHOOL (CITYHIGH) <br> 💼Technical Vocational Livelihood <br> 🎓2013-2018'
+        },
+        {
+          color: 'cyan',
+          author: 'Cedric',
+          title: 'Champion Mindanao Cluster Level',
+          desc: "STI Code Fest Champion Senior High Devision <br> 2017-2019 Coding Festival"
+        },
+        {
+          color: 'green',
+          author: 'Cedric',
+          title: 'Honorable mention in EXPO',
+          desc: '🏫Systems Technology Institute (STI) <br> 💼Technical Vocational Livelihood <br> 🎓2017-2019'
         }
       ],
     }),
@@ -128,7 +144,7 @@ import Typed from 'typed.js';
         typed : function (){
 
             var options = {
-            strings: ['<s>Cedric</s>','<i>Matthew</i>','<b>Verdida</b>'],
+            strings: ['CEDRIC','MATTHEW'],
             typeSpeed: 90,
             loop: true
             };
