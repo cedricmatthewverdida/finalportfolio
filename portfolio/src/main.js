@@ -32,7 +32,7 @@ export default function (Vue, { appOptions, head }) {
             background: '#1d1f29',
             m1: '#080C12',
             m2: '#101822',
-            m3: '#252738',
+            m3: '#101822',
             m4: '#676fa2',
             primary: '#21CFF3',
             accent: '#FF4081',
