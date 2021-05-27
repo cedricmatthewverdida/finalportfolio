@@ -9,9 +9,11 @@
 
   <v-row>
       <v-col>
-            <v-tabs grow>
-              <v-tab v-on:click="tab = 0">All</v-tab>
-              <v-tab
+            <v-tabs 
+            grow
+            >
+              <v-tab :style="[$vuetify.theme.dark ? {'background-color': '#080A12'} : {'background-color': '#f3f3f3'}]" v-on:click="tab = 0">All</v-tab>
+              <v-tab :style="[$vuetify.theme.dark ? {'background-color': '#080A12'} : {'background-color': '#f3f3f3'}]"
               v-for="(cat,c) in categories"
               :key="c" v-on:click="tab = cat.id">{{ cat.name }}</v-tab>
           </v-tabs>
@@ -66,6 +68,7 @@
                 width="350"
                 class="mt-5"
                 data-aos="fade-in"
+                color="m1"
               >
 
                 <v-expand-x-transition>
@@ -107,6 +110,7 @@
 
                   <v-expand-transition>
                     <v-card
+                      color="m1"
                       v-if="reveal && post.node.id == OpenIndex"
                       class="transition-fast-in-fast-out v-card--reveal"
                       style="height: 100%;"

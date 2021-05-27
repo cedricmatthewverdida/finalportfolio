@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app :style="[$vuetify.theme.dark ? {'background-color': '#0C0C12'} : {'background-color': '#FFF'}]">
 
 
 
@@ -91,7 +91,8 @@
           <v-card
             flat
             tile
-            class="indigo lighten-1 white--text text-center"
+
+            class="text-center red"
           >
             <v-card-text>
               <v-btn
@@ -124,6 +125,7 @@
           :value="value"
           horizontal
           app
+          :style="[$vuetify.theme.dark ? {'background-color': '#080A12'} : {'background-color': '#f3f3f3'}]"
         >
 
 
@@ -201,9 +203,15 @@ import HireMe from '~/components/hireme'
       }
     },
     methods:{
+
       theme() {
         return this.$vuetify.theme.dark;
       },
+      
+      themes() {
+        return this.$vuetify.theme.dark;
+      },
+
       changetheme : function (){
         !this.theme() ? this.$vuetify.theme.dark = true : this.$vuetify.theme.dark = false;
         this.thememode = this.theme()
@@ -242,7 +250,7 @@ import HireMe from '~/components/hireme'
     mounted(){
       this.text_reveal();
       this.typed();
-      this.thememode = this.theme();
+      this.thememode = this.themes();
     }
   }
 </script>

@@ -10,7 +10,7 @@
                 >
                     <v-card
                     :elevation="hover ? 12 : 2"
-                    class="mx-auto"
+                    class="mx-auto m1"
                     
                     >
 
@@ -65,7 +65,6 @@
                         v-for="(exp, i) in experience"
                         :key="i"
                         large
-                        
                         >
                         <template v-slot:icon>
                             <v-avatar>
@@ -75,7 +74,7 @@
                         <template v-slot:opposite>
                             <span>{{exp.author}}</span>
                         </template>
-                        <v-card class="elevation-2">
+                        <v-card color="m2" class="elevation-2">
                             <v-card-title class="caption">
                                 {{exp.title}}
                             </v-card-title>
@@ -136,7 +135,7 @@ import Typed from 'typed.js';
           color: 'green',
           author: 'Cedric',
           title: 'Honorable mention in EXPO',
-          desc: '🏫Systems Technology Institute (STI) <br> 💼Technical Vocational Livelihood <br> 🎓2017-2019'
+          desc: '🏫Systems Technology Institute (STI) <br> 📱 Most Voted Mobile App UI Design.<br> 🎓2019-2020'
         }
       ],
     }),

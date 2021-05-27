@@ -20,7 +20,7 @@ mdi-dots-horizontal-circle-outline
         </v-btn>
       </template>
 
-      <v-card>
+      <v-card color="m1">
 
         <v-card-title class="headline">
           {{title}}

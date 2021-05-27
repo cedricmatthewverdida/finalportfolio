@@ -5,6 +5,7 @@
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import DefaultLayout from '~/layouts/Default.vue'
+import colors from 'vuetify/lib/util/colors'
 
 export default function (Vue, { appOptions, head }) {
   head.link.push({
@@ -23,7 +24,42 @@ export default function (Vue, { appOptions, head }) {
   });
   
   const opts = { 
-    theme: { dark: true }
+    theme: { 
+      dark: true,
+        themes: {
+          dark: {
+            base: colors.purple.base,
+            background: '#1d1f29',
+            m1: '#080C12',
+            m2: '#101822',
+            m3: '#252738',
+            m4: '#676fa2',
+            primary: '#21CFF3',
+            accent: '#FF4081',
+            secondary: '#ffe18d',
+            success: '#4CAF50',
+            info: '#2196F3',
+            warning: '#FB8C00',
+            error: '#FF5252'
+          },
+          light: {
+            base: colors.purple.base,
+            background: '#FFFFFF',
+            m1: '#FFFFFF',
+            m2: '#ffffff',
+            m3: '#FFFFFF',
+            m4: '#f6f3e1',
+            primary: '#1976D2',
+            accent: '#e91e63',
+            secondary: '#30b1dc',
+            success: '#4CAF50',
+            info: '#2196F3',
+            warning: '#FB8C00',
+            error: '#FF5252'
+          }
+        },
+  
+    }
    } //opts includes, vuetify themes, icons, etc.
   Vue.use(Vuetify)
   
