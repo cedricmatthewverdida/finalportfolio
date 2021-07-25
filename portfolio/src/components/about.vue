@@ -104,7 +104,12 @@ import Typed from 'typed.js';
         'mdi-language-php',
         'mdi-laravel',
         'mdi-nodejs',
-        'mdi-database'
+        'mdi-database',
+        'mdi-vuetify',
+        'mdi-graphql',
+        'mdi-language-python',
+        'mdi-language-csharp',
+        'mdi-sass'
     ],
     experience: [
         {
